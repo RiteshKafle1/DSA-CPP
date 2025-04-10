@@ -18,13 +18,13 @@ int main()
   // int Age=20;
   // cout << Age<<endl;
 
-  // Age=21; // Re-assignment can be done but not Re-declaration 
+  // Age=30; // Re-assignment can be done but not Re-declaration 
   // cout<<Age;
 
   //    --------------------
 
   float salary = 40000.17675;
-  cout << salary << endl;
+  // cout << salary << endl;
   // cout<<sizeof(salary)<<endl;
 
   char alphabet = 'a';
@@ -32,7 +32,7 @@ int main()
   // cout<<sizeof(alphabet)<<endl;
 
   double weight = 55.23427857;
-  cout << weight << endl;
+  // cout << weight << endl;
   // cout<<sizeof(weight)<<endl;
 
   bool isLoggedIn = true;
