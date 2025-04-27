@@ -17,18 +17,19 @@ void leftRotation(int arr[], int size, int k)
     low++;
     high--;
   }
+    // reverse second part
+    
+    low=size-rotateBy;
+    high=size-1;
+    while(low<high){
+      swap(arr[low],arr[high]);
+      low++;
+      high--;
+    }
+  
   // reverse first part
   low=0;
   high=size-rotateBy-1;
-  while(low<high){
-    swap(arr[low],arr[high]);
-    low++;
-    high--;
-  }
-  // reverse remaining part
-  
-  low=size-rotateBy;
-  high=size-1;
   while(low<high){
     swap(arr[low],arr[high]);
     low++;
@@ -40,7 +41,7 @@ int main()
 {
   int arr[] = {1, 2, 3, 4, 5,6,7};
   int size = 7;
-  int k = 7;
+  int k = 8;
   leftRotation(arr, size, k);
   for (int a : arr)
   {
