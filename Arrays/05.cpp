@@ -6,6 +6,8 @@ void rightRotate(int arr[], int size, int k)
 {
 
   int rotation = k % size;
+  if(rotation==0)
+      return;
 
   int low = 0;
   int high = size - 1;
