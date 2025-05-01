@@ -2,26 +2,25 @@
 #include <algorithm>
 using namespace std;
 
-void findSingleNumber(int arr[], int size, int &ansBox)
+void bubbleSort(int arr[], int size)
 {
-  int i = 0;
-  while (i < size - 1)
+  for (int i = size - 1; i >= 0; i--)
   {
-    if (arr[i] == arr[i + 1])
-      i += 2;
-      else
-        break;
+    for (int j = 0; j < i; j++)
+    {
+      if(arr[j]>arr[j+1])
+        swap(arr[j], arr[j + 1]);
+    }
   }
-  ansBox = arr[i];
 }
+
 int main()
 {
-  int arr[] = {1, 2, 3, 1, 2, 3, 4,4,5};
-  int size = 9;
-  sort(arr, arr + size);
-  int ansBox = -1;
-  findSingleNumber(arr, size, ansBox);
-  cout << ansBox << " ";
+  int arr[] = {10,9,8,7,6,5,4,3,2,1};
+  int size = 10;
+  bubbleSort(arr, size);
+  for (int a : arr)
+    cout << a << " ";
 
   return 0;
 }
