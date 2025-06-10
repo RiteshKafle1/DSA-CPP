@@ -1,0 +1,5 @@
+Array -> container where same type of data are stored
+We require array because,in case of variable we know that only one item can be stored .so to store multiple items we require array
+Items in array are stored in continuous block of memory
+when we declare but not initialize the array,garbage value are stored
+when the size of array is greater,but initialization is few,remaining block are automatically filled with 0.
