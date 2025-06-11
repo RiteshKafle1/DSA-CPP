@@ -1,0 +1,8 @@
+why do we need vectors?
+  -> In case of array,size of an array declare compile time and resize is not possible if we want to grow the size of an array.In addition to it,functions very limited.
+  -> If dynamically allocated,manually delete .
+
+vectors -> dynamic array that can grow or shrink.
+        -> manages memory automatically
+        good useful member functions.
+        no  worry of declaring size at compile time.
