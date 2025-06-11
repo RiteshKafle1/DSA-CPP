@@ -1,0 +1,5 @@
+unique number -> This problem is solved using the xor operation,as we know xor cancels the same number.
+
+sort 0s and 1s -> The first solution that comes to the mind counting them and filling.Also 2 pointer could be the solution.
+
+
