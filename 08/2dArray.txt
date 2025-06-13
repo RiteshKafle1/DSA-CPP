@@ -1,0 +1,6 @@
+ searching the target in the matrix
+  -> the logic is preety simple ,asking each cell in the matrix
+    are you the target we are searching for. 
+
+While passing the 2d array to a function,its mandatory to pass the col,as we know 2d array is a 1d array inside the memory so it requires the col size to convert thats why. 
+
