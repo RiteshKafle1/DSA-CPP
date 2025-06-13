@@ -1,0 +1,13 @@
+Map is a collection of key value pairs. 
+One of the most important function in map is 
+    
+    find()-> It help us to the particular key and if found,returns the iterator of the location.
+    else returns the location of last entry.
+
+Some other methods in map :
+size() -> returns the size of the map
+clear() -> clears all the entry in the map
+empty() -> checks whether the map is empty.
+erase() -> removes the key and value
+at() -> helps to find the value of the corresponding key.
+count() -> counts key,but the key should be unique,so it would be either 0 or 1.
