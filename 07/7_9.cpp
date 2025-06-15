@@ -1,20 +1,30 @@
 #include <iostream>
 using namespace std;
-//sorting the 0s and 1s using the 2 pointer approach.
+// sorting the 0s and 1s using the 2 pointer approach.
 void sortArray(int arr[], int size)
 {
   int i = 0;
-  int j = i + 1;
+  int j = size - 1;
 
-  while (j < size)
+  while (i<j)
   {
-    if (arr[i] <= arr[j])
-      j++;
+    if (arr[i] < arr[j])
+    {
+      i++;
+      j--;
+    }
     else if (arr[i] > arr[j])
     {
       swap(arr[i], arr[j]);
       i++;
-      j++;
+      j--;
+    }
+    else
+    {
+      if (arr[i] == 1)
+        j--;
+      else
+        i++;
     }
   }
 
@@ -26,8 +36,8 @@ void sortArray(int arr[], int size)
 }
 int main()
 {
-  int arr[] = {1, 1, 1, 1, 1, 0, 0, 0, 0, 1};
-  int size = 10;
+  int arr[] = {0, 1, 1, 0, 0, 1, 1, 0, 1};
+  int size = 9;
 
   sortArray(arr, size);
 
